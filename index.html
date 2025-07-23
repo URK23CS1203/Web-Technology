@@ -1,121 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Appointment System</title>
-    <style>
-        body {
-            background-color: #e6f2ff;
-            color: #003366;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #005b96;
-        }
-        table, th, td {
-            border: 1px solid #005b96;
-            border-collapse: collapse;
-            padding: 10px;
-        }
-        th {
-            background-color: #cce5ff;
-        }
-        a {
-            color: #0066cc;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Medical Appointment System</title>
+  <style>
+    body {
+      background-color: #e6f2ff;
+      color: #003366;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #004080;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #004080;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    nav a {
+      margin-right: 15px;
+    }
+  </style>
 </head>
 <body>
+  <!-- Header Section -->
+  <header>
+    <h1>Medical Appointment System</h1>
+    <p>Your Health, Our Priority</p>
+  </header>
 
-    <!-- Header Section -->
-    <div id="top">
-        <h1>Welcome to MediCare Appointment System</h1>
-        <p>Your trusted platform for booking doctor consultations online.</p>
-    </div>
+  <!-- Navigation Links -->
+  <nav style="text-align: center; padding: 10px;">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="https://www.healthline.com" target="_blank">Health Info</a>
+    <a href="mailto:appointments@hospital.com">Email Us</a>
+    <a href="tel:+919876543210">Call Us</a>
+  </nav>
 
-    <!-- Navigation Section -->
-    <div>
-        <h2>Quick Links</h2>
-        <ul>
-            <li><a href="#about">About Us (Internal Link)</a></li>
-            <li><a href="https://www.who.int" target="_blank">Visit WHO Website (External Link)</a></li>
-            <li><a href="#doctors">Doctors (Bookmark Link)</a></li>
-            <li><a href="mailto:contact@medicare.com">Email Us</a></li>
-            <li><a href="tel:+1800123456">Call Us</a></li>
-            <li><a href="https://www.medicare.com">
-                <img src="OIP.jpg" alt="MediCare Logo">
-            </a></li>
-        </ul>
-    </div>
-
+  <!-- Main Content -->
+  <main>
     <!-- About Section -->
-    <!-- Comment: This is the about section -->
     <div id="about">
-        <h2>About MediCare</h2>
-        <p>MediCare is a modern medical appointment system that connects patients with qualified healthcare professionals. We offer:</p>
-        <ol>
-            <li>Online Appointment Booking
-                <ul>
-                    <li>General Physicians</li>
-                    <li>Specialists</li>
-                </ul>
-            </li>
-            <li>Teleconsultation Services</li>
-            <li>Medical History Tracking</li>
-        </ol>
+      <!-- Comment: About the medical appointment system -->
+      <h2>About Us</h2>
+      <p>Welcome to our Medical Appointment System. This platform allows patients to book doctor appointments online without the hassle of long queues or waiting times. We ensure timely access to trusted healthcare professionals across various specialties.</p>
+      <img src="OIP.jpg" alt="Medical Illustration">
     </div>
 
-    <!-- Doctor List Section -->
-    <!-- Comment: Doctor information table -->
-    <div id="doctors">
-        <h2>Available Doctors</h2>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Specialization</th>
-                <th>Timing</th>
-            </tr>
-            <tr>
-                <td>Dr. A. Kumar</td>
-                <td>Cardiologist</td>
-                <td>9:00 AM - 1:00 PM</td>
-            </tr>
-            <tr>
-                <td>Dr. B. Singh</td>
-                <td>Dermatologist</td>
-                <td>2:00 PM - 6:00 PM</td>
-            </tr>
-            <tr>
-                <td>Dr. C. Patel</td>
-                <td>General Physician</td>
-                <td>10:00 AM - 4:00 PM</td>
-            </tr>
-        </table>
+    <!-- Services Section -->
+    <div id="services">
+      <!-- Comment: List of available services -->
+      <h2>Our Services</h2>
+      <ul>
+        <li>General Medicine</li>
+        <li>Pediatrics
+          <ul>
+            <li>Child Vaccination</li>
+            <li>Growth Checkups</li>
+          </ul>
+        </li>
+        <li>Dermatology</li>
+        <li>Cardiology
+          <ul>
+            <li>ECG</li>
+            <li>Heart Checkup</li>
+          </ul>
+        </li>
+      </ul>
     </div>
 
-    <!-- Services Description List -->
-    <!-- Comment: Services description using dl -->
-    <div>
-        <h2>Our Services</h2>
-        <dl>
-            <dt>Booking</dt>
-            <dd>Online booking with real-time availability.</dd>
-            <dt>Consultation</dt>
-            <dd>Telehealth and in-clinic consultations available.</dd>
-            <dt>Records</dt>
-            <dd>Maintain digital medical records securely.</dd>
-        </dl>
-    </div>
+    <!-- Doctors Table -->
+    <!-- Comment: Table displaying doctor info -->
+    <h2>Available Doctors</h2>
+    <table>
+      <tr>
+        <th>Doctor</th>
+        <th>Specialization</th>
+        <th>Timing</th>
+      </tr>
+      <tr>
+        <td>Dr. Anjali Mehra</td>
+        <td>General Physician</td>
+        <td>10:00 AM - 1:00 PM</td>
+      </tr>
+      <tr>
+        <td>Dr. Vikram Rao</td>
+        <td>Cardiologist</td>
+        <td>4:00 PM - 7:00 PM</td>
+      </tr>
+      <tr>
+        <td>Dr. Sneha Kapoor</td>
+        <td>Pediatrician</td>
+        <td>11:00 AM - 2:00 PM</td>
+      </tr>
+    </table>
 
-    <!-- Footer Section -->
-    <!-- Comment: Footer section with return link -->
-    <div>
-        <h3>Need Help?</h3>
-        <p>Contact our 24/7 support at <a href="mailto:support@medicare.com">support@medicare.com</a></p>
-        <p><a href="#top">Back to Top</a></p>
-    </div>
+    <!-- Appointment Process -->
+    <h2>How to Book an Appointment</h2>
+    <ol>
+      <li>Choose your doctor</li>
+      <li>Select available time slot</li>
+      <li>Enter patient details</li>
+      <li>Confirm the booking</li>
+    </ol>
 
+    <!-- Description List -->
+    <!-- Comment: Info about appointment types -->
+    <h2>Appointment Types</h2>
+    <dl>
+      <dt>General Checkup</dt>
+      <dd>Routine consultation with a general physician</dd>
+      <dt>Specialist Consultation</dt>
+      <dd>Appointment with a cardiologist, dermatologist, etc.</dd>
+      <dt>Emergency</dt>
+      <dd>Immediate care for critical conditions</dd>
+    </dl>
+
+    <!-- Bookmark Section -->
+    <h3 id="top">Jump to Top</h3>
+    <p><a href="#about">Go to About Section</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Comment: Footer contact info -->
+    <p>&copy; 2025 Medical Appointment System. All rights reserved.</p>
+    <p><a href="mailto:support@hospital.com" style="color:white;">support@hospital.com</a> | 
+       <a href="tel:+919876543210" style="color:white;">+91 98765 43210</a></p>
+  </footer>
 </body>
 </html>
